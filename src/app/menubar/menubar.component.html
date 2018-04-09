@@ -1,0 +1,31 @@
+<div class="menubar">
+  <div class="square"></div>
+  <div class="routes">
+    <div id="inbox" class="inbox navigate">
+      <a class="link" [routerLink]="['/inbox']">
+        <a class="material-icons icon">move_to_inbox</a>
+        Inbox
+      </a>
+    </div>
+    <div id="dashboard" class="dashboard navigate">
+      <a class="link" [routerLink]="['/dashboard']" autofocus>
+        <a class="material-icons icon">dashboard</a>
+        Dashboard
+      </a>
+    </div>
+    <div id="tasks" class="tasks navigate">
+      <a class="link" [routerLink]="['/tasks']">
+        <a class="material-icons icon">assignment</a>
+        My Tasks
+      </a>
+    </div>
+  </div>
+  <div class="project-settings">
+    <div class="settings">
+      <p class="label">PROJECTS</p>
+      <a class="material-icons icon-settings">settings</a>
+    </div>
+    <button class="btn">+ Add a project</button>
+  </div>
+  <app-options></app-options>
+</div>

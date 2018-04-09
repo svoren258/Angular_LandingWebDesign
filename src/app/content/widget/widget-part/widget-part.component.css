@@ -1,0 +1,41 @@
+.end-part {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.play-icon {
+  color: #00DD80;
+  margin-left: 10px;
+  margin-right: 90px;
+  cursor: pointer;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background: #B7C6D3;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.date {
+  margin: 0;
+  font-size: 12px;
+}
+
+.widget-part {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #B7C6D3;
+  border-radius: 3px;
+  margin: 0 16px 15px 16px;
+}
+
+.description {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  align-self: center;
+}
