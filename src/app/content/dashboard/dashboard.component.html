@@ -12,29 +12,45 @@
       </div>
     </div>
     <div class="switch-menu">
-      <div class="switch-layout">
-        <div class="switch-left">
-          <div class="vertical"></div>
-          <div class="vertical"></div>
-          <div class="vertical"></div>
+      <div class="switch-layout" *ngIf="row">
+        <div class="switch-left-row" (click)="switchLayoutToColumn()">
+          <div class="vertical-row"></div>
+          <div class="vertical-row"></div>
+          <div class="vertical-row"></div>
         </div>
-        <div class="switch-right">
-          <div class="horizontal"></div>
-          <div class="horizontal"></div>
-          <div class="horizontal"></div>
+        <div class="switch-right-row" (click)="switchLayoutToRow()">
+          <div class="horizontal-row"></div>
+          <div class="horizontal-row"></div>
+          <div class="horizontal-row"></div>
         </div>
       </div>
-      <div class="right-menu">
-        <p class="tasks menu-item">Tasks</p>
-        <p class="conversion menu-item">Conversion</p>
-        <p class="report menu-item">Report</p>
-        <p class="setting menu-item">Setting</p>
+      <div class="switch-layout" *ngIf="column">
+        <div class="switch-left-column" (click)="switchLayoutToColumn()">
+          <div class="vertical-column"></div>
+          <div class="vertical-column"></div>
+          <div class="vertical-column"></div>
+        </div>
+        <div class="switch-right-column" (click)="switchLayoutToRow()">
+          <div class="horizontal-column"></div>
+          <div class="horizontal-column"></div>
+          <div class="horizontal-column"></div>
+        </div>
       </div>
     </div>
+    <div class="right-menu">
+      <a class="tasks menu-item" routerLinkActive="active" [routerLink]="">Tasks</a>
+      <a class="conversion menu-item" [routerLink]="">Conversion</a>
+      <a class="report menu-item" [routerLink]="">Report</a>
+      <a class="setting menu-item" [routerLink]="">Setting</a>
+    </div>
   </div>
-  <div class="widget-array">
-    <app-widget></app-widget>
-    <app-widget></app-widget>
-    <app-widget></app-widget>
+
+  <div
+    class="widget-array-column"
+    [ngClass]="{'widget-array-column' : column, 'widget-array-row' : row}"
+  >
+    <app-widget [row]="row" [column]="column"></app-widget>
+    <app-widget [row]="row" [column]="column"></app-widget>
+    <app-widget [row]="row" [column]="column"></app-widget>
   </div>
 </div>

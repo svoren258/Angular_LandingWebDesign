@@ -1,4 +1,7 @@
-<div class="widget-part">
+<div
+  class="widget-part-column"
+  [ngClass]="{'widget-part-column' : column, 'widget-part-row' : row}"
+>
   <p class="description">Column "Action Time" in the "By time entries" report</p>
   <div class="end-part">
     <a class="material-icons play-icon">play_circle_outline</a>

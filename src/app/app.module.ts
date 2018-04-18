@@ -18,13 +18,12 @@ import { TeamComponent } from './content/team/team.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  { path: '', redirectTo: 'dashboard/projects', pathMatch: 'full'},
+  { path: 'dashboard/projects', component: DashboardComponent },
+  { path: 'dashboard/timesheet', component: TimesheetComponent },
+  { path: 'dashboard/team', component: TeamComponent },
   { path: 'inbox', component: InboxComponent },
   { path: 'tasks', component: TasksComponent },
-  { path: 'timesheet', component: TimesheetComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'team', component: TeamComponent },
 ];
 
 @NgModule({

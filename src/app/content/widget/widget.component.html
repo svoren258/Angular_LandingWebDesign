@@ -1,12 +1,18 @@
-<div class="widget">
+<div
+  class="widget-column"
+  [ngClass]="{'widget-column' : column, 'widget-row' : row}"
+>
   <div class="heading">
     Nieprawidlowy lub w trakcie proby odtworzenia
   </div>
-  <div class="separator"></div>
+  <div
+    class="separator-column"
+    [ngClass]="{'separator-column' : column, 'separator-row' : row}"
+  >
+  </div>
 
   <input class="task-input" placeholder="Add a task...">
-
-  <app-widget-part></app-widget-part>
-  <app-widget-part></app-widget-part>
-  <app-widget-part></app-widget-part>
+  <app-widget-part [column]="column" [row]="row"></app-widget-part>
+  <app-widget-part [column]="column" [row]="row"></app-widget-part>
+  <app-widget-part [column]="column" [row]="row"></app-widget-part>
 </div>

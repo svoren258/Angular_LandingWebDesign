@@ -47,9 +47,9 @@
   color: #8AF170;
 }
 
-.link:focus {
-  color: #8AF170;
-  border-bottom: 2px solid #8AF170;
+.active {
+  color: #8AF170 !important;
+  border-bottom: 2px solid #8AF170 !important;
 }
 
 .link {

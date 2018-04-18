@@ -29,8 +29,8 @@
   align-items: left;
 }
 
-.link:focus {
-  color: #8AF170;
+.active {
+  color: #8AF170 !important;
   border-left: 5px solid #8AF170;
 }
 
@@ -68,11 +68,6 @@
   /*padding: 10px 0 10px 30px;*/
   cursor: pointer;
 }
-
-/*.navigate:focus {*/
-  /*color: #8AF170;*/
-  /*border-left: 5px solid #8AF170;*/
-/*}*/
 
 .icon {
   margin-right: 20px;

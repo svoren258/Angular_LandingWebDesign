@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-widget-part',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WidgetPartComponent implements OnInit {
 
+
+  @Input() column: boolean;
+  @Input() row: boolean;
   constructor() { }
 
   ngOnInit() {

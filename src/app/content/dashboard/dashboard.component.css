@@ -16,9 +16,7 @@
   margin-right: 50px;
 }
 
-.switch-right {
-  cursor: pointer;
-}
+
 
 .square {
   width: 50px;
@@ -52,7 +50,7 @@
   margin-right: 50px;
 }
 
-.switch-left {
+.switch-left-column {
   width: 36px;
   height: 27px;
   margin: 4px 4px 4px 4px;
@@ -64,7 +62,36 @@
   justify-content: center;
 }
 
-.vertical {
+.switch-right-column {
+  cursor: pointer;
+}
+
+.switch-left-row {
+  width: 36px;
+  height: 27px;
+  margin: 4px 0px 4px 4px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+.switch-right-row {
+  width: 36px;
+  height: 27px;
+  margin: 4px 4px 4px 4px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vertical-column {
   width: 4px;
   height: 11px;
   margin-right: 1px;
@@ -72,20 +99,37 @@
   border-radius: 1.5px;
 }
 
-.horizontal {
+.horizontal-column {
   height: 3px;
   width: 14px;
   margin-bottom: 1px;
   margin-left: 9px;
+  margin-top: 1px;
   border-radius: 1.5px;
   background: #B7C6D3;
+}
+
+.vertical-row {
+  width: 4px;
+  height: 11px;
+  margin-right: 1px;
+  background: #B7C6D3;
+  border-radius: 1.5px;
+}
+
+.horizontal-row {
+  height: 3px;
+  width: 14px;
+  margin: 1px 7px 0px 9px;
+  border-radius: 1.5px;
+  background: #37E612;
 }
 
 .right-menu {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 250px;
+  width: 500px;
   height: 35px;
   border-radius: 5px;
   background: #EDF0F4;
@@ -99,7 +143,19 @@
   height: 100%;
 }
 
-.tasks {
+.menu-item {
+  text-decoration: none;
+  font-size: 12px;
+  color: #CCD6DF;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #8AF170;
+}
+
+.active {
   color: #8AF170 !important;
   background: #FFFFFF;
   padding: 6px 10px 6px 10px;
@@ -108,17 +164,16 @@
   border-radius: 2px;
 }
 
-.menu-item {
-  font-size: 12px;
-  color: #CCD6DF;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.widget-array {
+.widget-array-column {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.widget-array-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 

@@ -12,4 +12,7 @@ export class MenubarComponent implements OnInit {
   ngOnInit() {
   }
 
+  addProject(): void {
+
+  }
 }
