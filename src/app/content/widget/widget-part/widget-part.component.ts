@@ -7,8 +7,6 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class WidgetPartComponent implements OnInit {
 
-
-  @Input() column: boolean;
   @Input() row: boolean;
   constructor() { }
 

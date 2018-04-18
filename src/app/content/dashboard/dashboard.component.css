@@ -129,7 +129,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 500px;
   height: 35px;
   border-radius: 5px;
   background: #EDF0F4;
@@ -149,6 +148,7 @@
   color: #CCD6DF;
   font-weight: bold;
   cursor: pointer;
+  margin: 12px;
 }
 
 .menu-item:hover {
@@ -159,8 +159,8 @@
   color: #8AF170 !important;
   background: #FFFFFF;
   padding: 6px 10px 6px 10px;
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: 5px;
+  margin-right: 0px;
   border-radius: 2px;
 }
 

@@ -32,6 +32,7 @@
 .active {
   color: #8AF170 !important;
   border-left: 5px solid #8AF170;
+  padding-left: 25px !important;
 }
 
 .project-settings {
@@ -103,5 +104,7 @@
   background: #CCD6DF;
 }
 
-
+.btn:active {
+  background: #00DD80;
+}
 
